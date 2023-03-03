@@ -21,3 +21,18 @@ img {
 	height: 104px;
 	margin-right: 15px;
 }
+
+.icons {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	width: 80%;
+	max-width: 800px;
+}
+.icons img {
+	margin: 15px;
+	width: 35px;
+	height: 35px;
+}
