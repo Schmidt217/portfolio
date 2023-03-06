@@ -1,0 +1,22 @@
+.projectContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.project {
+	background-color: #333;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 0;
+}
+.project img {
+	margin: 0;
+	height: 300px;
+	width: 450px;
+}
+.projectDescription {
+	background-color: #333;
+	padding-top: 15px;
+	margin: 0;
+	height: 100%;
+}

@@ -1,4 +1,4 @@
-.works {
+.worksContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -7,8 +7,11 @@
 .pages {
 	position: relative;
 	overflow: hidden;
-	width: 600px;
-	padding: 50px;
+	width: 500px;
+	padding: 0 50px 0 50px;
+	margin: 10px;
+	background-color: rgba(255, 255, 255, 0.07);
+	border-radius: 20px;
 }
 .pages h4 {
 	text-align: center;
@@ -17,10 +20,6 @@
 
 .pages img {
 	width: 100%;
-}
-
-.lazy-img {
-	filter: blur(20px);
 }
 
 .overview {
@@ -43,9 +42,11 @@
 .overview p {
 	color: #000;
 	text-decoration: none;
+	font-size: 16px;
 }
 .overview small {
 	color: #000;
+	font-size: 12px;
 }
 
 .pages:hover .overview {

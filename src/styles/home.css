@@ -12,3 +12,17 @@
 .home-container p {
 	font-size: 32px;
 }
+.social-media {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 40%;
+	right: 1%;
+}
+.social-media a {
+	color: rgb(184, 126, 17);
+	font-size: 30px;
+}
+.social-media a:hover {
+	color: rgb(245, 167, 23);
+}

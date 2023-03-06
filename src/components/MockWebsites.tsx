@@ -1,12 +1,12 @@
 import alpine from "../assets/alpine-4x4.webp";
 import bankist from "../assets/bankist.webp";
 import game from "../assets/game.webp";
-import "../styles/works.css";
+import "../styles/mockWebsites.css";
 
-function MyWorks() {
+function MockWebsites() {
 	return (
 		<section>
-			<h1>My Work</h1>
+			<h1>Mock Websites</h1>
 			<div className="worksContainer">
 				<div className="pages">
 					<h4>Alpine 4x4</h4>
@@ -29,17 +29,20 @@ function MyWorks() {
 				<div className="pages">
 					<h4>Bankist</h4>
 					<a href="https://ms-bankist.netlify.app/" target="_blank">
-						<img src={bankist} alt="Bankist App" />
+						<img
+							src={bankist}
+							style={{ height: 200, width: 300 }}
+							alt="Bankist App"
+						/>
 						<div className="overview">
 							<p>
 								Bankist is a mock website for a fictional minimalist bank. It
 								was created through a Udemy course called "The Complete
-								JavaScript Course" by Jonas Schmedtmann. This was one course
-								that taught me how to use JavaScript and Jonas was a great
-								instructor. Jonas mentioned we could use the projects we work on
-								together in our Portfolios, but this website was not responsive
-								when it was finished through the course. I took it upon myself
-								to make it responsive and cleaned up the way it looks.
+								JavaScript Course" by Jonas Schmedtmann. Jonas mentioned we
+								could use the projects we work on together in our Portfolios,
+								but this website was not responsive when it was finished through
+								the course. I took it upon myself to make it responsive and
+								cleaned up the way it looks.
 							</p>
 							<small>Click to go to the Bankist App!</small>
 						</div>
@@ -48,7 +51,11 @@ function MyWorks() {
 				<div className="pages">
 					<h4>Rock, Paper, Scissors, Lizard, Spock</h4>
 					<a href="https://ms-bbt-game.netlify.app/" target="_blank">
-						<img src={game} alt="Rock, Paper, Scissors, Lizard, Spock" />
+						<img
+							src={game}
+							style={{ height: 200, width: 300 }}
+							alt="Rock, Paper, Scissors, Lizard, Spock"
+						/>
 						<div className="overview">
 							<p>
 								This is a game I created through the idea from Frontend Mentor.
@@ -66,4 +73,4 @@ function MyWorks() {
 	);
 }
 
-export default MyWorks;
+export default MockWebsites;
