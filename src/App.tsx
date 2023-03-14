@@ -11,7 +11,6 @@ function App() {
 			<Home />
 			<Experience />
 			<Projects />
-			<MockWebsites />
 		</div>
 	);
 }

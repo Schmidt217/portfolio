@@ -1,22 +1,39 @@
 .projectContainer {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
 .project {
-	background-color: #333;
-	border-radius: 15px;
-	overflow: hidden;
-	padding: 0;
+	width: 450px;
 }
-.project img {
+.img-container {
+	overflow: hidden;
+	margin-bottom: -10px;
+	border-radius: 15px 15px 0 0;
+}
+.project-image {
+	transition: transform 0.5s;
+}
+.workoutBuilderImage {
 	margin: 0;
 	height: 300px;
 	width: 450px;
 }
+.brewFinderImage {
+	margin: 0;
+	height: 300px;
+}
+.project-image:hover {
+	transform: scale(1.05);
+}
 .projectDescription {
 	background-color: #333;
 	padding-top: 15px;
+	border-radius: 0 0 15px 15px;
 	margin: 0;
-	height: 100%;
+}
+
+hr {
+	margin: 50px 0 50px 0;
 }
