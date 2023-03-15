@@ -1,6 +1,7 @@
 import MockWebsites from "./MockWebsites";
 import workout from "../assets/WorkoutBuildr.webp";
 import brewFinder from "../assets/brewFinder.png";
+import { Link } from "react-router-dom";
 import "../styles/projects.css";
 
 function Projects() {
@@ -25,7 +26,7 @@ function Projects() {
 					</a>
 				</div>
 				<div className="project">
-					<a href="https://workoutbuildr.netlify.app/">
+					<Link to="/brew-finder-app">
 						<div className="img-container">
 							<img
 								className="project-image brewFinderImage"
@@ -38,7 +39,7 @@ function Projects() {
 							<p>iOS App made with SwiftUI</p>
 							<small> Click to see details of the app</small>
 						</div>
-					</a>
+					</Link>
 				</div>
 			</div>
 			<hr />
