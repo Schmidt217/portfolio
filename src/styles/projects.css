@@ -36,4 +36,7 @@
 
 hr {
 	margin: 50px 0 50px 0;
+	background-color: rgb(184, 126, 17);
+	height: 1px;
+	border: none;
 }
