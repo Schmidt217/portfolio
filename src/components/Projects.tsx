@@ -6,7 +6,7 @@ import "../styles/projects.css";
 
 function Projects() {
 	return (
-		<section>
+		<section id="projects">
 			<h1>My Projects</h1>
 			<div className="projectContainer">
 				<div className="project">

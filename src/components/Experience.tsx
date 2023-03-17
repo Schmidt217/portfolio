@@ -14,7 +14,7 @@ import "../styles/experience.css";
 
 function Experience() {
 	return (
-		<section>
+		<section id="experience">
 			<h1>My Experience</h1>
 			<div className="box-container">
 				<div className="box">

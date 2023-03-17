@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap");
+
 .home-container {
 	display: flex;
 	flex-direction: column;
@@ -6,6 +8,7 @@
 	align-items: center;
 }
 .home-container h1 {
+	font-family: "Chakra Petch", sans-serif;
 	margin-top: 0;
 	font-size: 120px;
 }

@@ -81,7 +81,7 @@ const WorkHistory = () => {
 		},
 	];
 	return (
-		<section>
+		<section id="work-history">
 			<h1>Professional Experience</h1>
 			<div className="job-list">
 				{jobs.map((job, index) => (

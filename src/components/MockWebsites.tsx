@@ -5,7 +5,7 @@ import "../styles/mockWebsites.css";
 
 function MockWebsites() {
 	return (
-		<section>
+		<>
 			<h2>Mock Websites</h2>
 			<div className="worksContainer">
 				<div className="pages">
@@ -69,7 +69,7 @@ function MockWebsites() {
 					</a>
 				</div>
 			</div>
-		</section>
+		</>
 	);
 }
 
