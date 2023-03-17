@@ -2,8 +2,8 @@ import "./styles/App.css";
 import "./styles/index.css";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
-import MockWebsites from "./components/MockWebsites";
 import Projects from "./components/Projects";
+import WorkHistory from "./components/WorkHistory";
 
 function App() {
 	return (
@@ -11,6 +11,7 @@ function App() {
 			<Home />
 			<Experience />
 			<Projects />
+			<WorkHistory />
 		</div>
 	);
 }
