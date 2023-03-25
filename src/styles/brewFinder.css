@@ -1,0 +1,13 @@
+#brew-finder-page {
+	height: 100vh;
+}
+img {
+	height: 400px;
+	margin: 0 15px 0 15px;
+}
+.container {
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+}

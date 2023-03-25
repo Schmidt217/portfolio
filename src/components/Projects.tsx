@@ -26,7 +26,7 @@ function Projects() {
 					</a>
 				</div>
 				<div className="project">
-					<Link to="/brew-finder-app">
+					<Link to="/brew-finder-app" target="_blank">
 						<div className="img-container">
 							<img
 								className="project-image brewFinderImage"

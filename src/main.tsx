@@ -14,6 +14,7 @@ const router = createBrowserRouter([
 	{
 		path: "/brew-finder-app",
 		element: <BrewFinder />,
+		errorElement: <ErrorPage />,
 	},
 ]);
 
