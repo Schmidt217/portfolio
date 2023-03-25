@@ -1,7 +1,7 @@
 #brew-finder-page {
 	height: 100vh;
 }
-img {
+#brew-finder-page img {
 	height: 400px;
 	margin: 0 15px 0 15px;
 }
