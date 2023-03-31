@@ -50,7 +50,32 @@ function ContactForm() {
 		e.preventDefault();
 		const isValid = validate();
 		if (isValid) {
-			// handle form submission here, e.g. sending data to a server
+			// create a URLParamObject
+			const params = new URLSearchParams();
+			params.append("name", name);
+			params.append("email", email);
+			params.append("subject", subject);
+			params.append("message", message);
+			params.append("form-name", "contact"); // the name of your form in Netlify
+			const urlEncodedData = params.toString();
+
+			fetch("/", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded", // sending URL encoded data
+				},
+				body: urlEncodedData,
+			})
+				.then((response) => {
+					if (response.ok) {
+						console.log(response);
+					} else {
+						console.error("Form Submission Error:", response);
+					}
+				})
+				.catch((error) => {
+					console.error("Form Submission Error:", error);
+				});
 			console.log(name, email, subject, message);
 			setName("");
 			setEmail("");
