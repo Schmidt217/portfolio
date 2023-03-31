@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 	},
 	{
-		path: "/brew-finder-app",
+		path: "brew-finder-app",
 		element: <BrewFinder />,
 		errorElement: <ErrorPage />,
 	},
