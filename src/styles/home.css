@@ -14,6 +14,7 @@
 }
 .home-container p {
 	font-size: 32px;
+	padding: 15px;
 }
 .social-media {
 	display: flex;
@@ -28,4 +29,21 @@
 }
 .social-media a:hover {
 	color: rgb(245, 167, 23);
+}
+@media (max-width: 768px) {
+	.home-container h1 {
+		font-size: 90px;
+	}
+	.home-container p {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 576px) {
+	.home-container h1 {
+		font-size: 70px;
+	}
+	.home-container p {
+		font-size: 18px;
+	}
 }

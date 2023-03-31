@@ -67,3 +67,8 @@
 .job-container.expanded .job-content {
 	max-height: 150px;
 }
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}

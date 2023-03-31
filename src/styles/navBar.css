@@ -62,3 +62,8 @@ nav li:hover {
 		top: -60px;
 	}
 }
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}

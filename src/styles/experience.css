@@ -40,3 +40,8 @@ img {
 .icons img:hover {
 	transform: rotate(360deg);
 }
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
