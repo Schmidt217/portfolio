@@ -4,6 +4,7 @@
 #brew-finder-page img {
 	height: 400px;
 	margin: 0 15px 0 15px;
+	border-radius: 10px;
 }
 .container {
 	width: 90vw;
@@ -11,8 +12,12 @@
 	flex-direction: column;
 	max-width: 1200px;
 }
-@media (max-width: 768px) {
-}
-
 @media (max-width: 576px) {
+	#brew-finder-page img {
+		height: 250px;
+		margin: 10px;
+	}
+	.img-des-container {
+		width: 100% !important;
+	}
 }
