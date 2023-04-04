@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/navBar.css";
 
 function NavBar() {
 	const [activeTab, setActiveTab] = useState<string>("home");
 	const [isFixed, setIsFixed] = useState<boolean>(false);
+	const navRef = useRef<HTMLUListElement>(null);
 
 	const handleTabClick = (tabName: string) => {
 		setActiveTab(tabName);
@@ -11,6 +12,13 @@ function NavBar() {
 		if (element) {
 			const y = element.getBoundingClientRect().top - 70;
 			window.scrollBy({ top: y, behavior: "smooth" });
+		}
+		toggleNav();
+	};
+
+	const toggleNav = () => {
+		if (navRef.current) {
+			navRef.current.classList.toggle("active");
 		}
 	};
 
@@ -26,13 +34,14 @@ function NavBar() {
 		};
 
 		window.addEventListener("scroll", handleScroll);
+		console.log(window.innerWidth > 768);
 
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	return (
-		<nav className={isFixed ? "fixed" : ""}>
-			<ul>
+		<nav className={isFixed && window.innerWidth > 768 ? "fixed" : ""}>
+			<ul ref={navRef}>
 				<li
 					className={activeTab === "home" ? "active" : ""}
 					onClick={() => handleTabClick("home")}
@@ -69,6 +78,11 @@ function NavBar() {
 					Contact
 				</li>
 			</ul>
+			<div className="hamburger" onClick={toggleNav}>
+				<span className="bar"></span>
+				<span className="bar"></span>
+				<span className="bar"></span>
+			</div>
 		</nav>
 	);
 }

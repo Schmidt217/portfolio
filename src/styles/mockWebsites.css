@@ -56,4 +56,7 @@
 }
 
 @media (max-width: 576px) {
+	.pages {
+		width: 200px;
+	}
 }

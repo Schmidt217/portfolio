@@ -9,10 +9,6 @@ function Home() {
 					Software engineer specializing in building front-end mobile and web
 					applications.
 				</p>
-				<p>
-					*Please note: This website has not yet been optimized for smaller
-					screens
-				</p>
 				<div className="social-media">
 					<a
 						href="https://www.linkedin.com/in/michael-schmidt217/"

@@ -41,9 +41,15 @@
 
 @media (max-width: 576px) {
 	.home-container h1 {
-		font-size: 70px;
+		font-size: 40px;
+		margin: 0 auto;
 	}
 	.home-container p {
 		font-size: 18px;
+	}
+	.social-media {
+		display: flex;
+		flex-direction: row;
+		position: static;
 	}
 }
