@@ -52,4 +52,7 @@
 		flex-direction: row;
 		position: static;
 	}
+	.social-media a {
+		margin: 0 10px 0 10px;
+	}
 }

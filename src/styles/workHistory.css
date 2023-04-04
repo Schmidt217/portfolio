@@ -34,7 +34,7 @@
 	position: relative;
 	height: 20px;
 	top: 5px;
-	left: 65%;
+	left: 45px;
 }
 .company-website a {
 	display: flex;
@@ -68,7 +68,25 @@
 	max-height: 150px;
 }
 @media (max-width: 768px) {
+	.job-container {
+		width: 75%;
+	}
 }
 
 @media (max-width: 576px) {
+	.job-header {
+		font-size: 12px;
+	}
+	.job-container {
+		width: 95%;
+	}
+	.job-description {
+		margin: 15px 5px 0 0px;
+	}
+	.company-logo-container {
+		display: none;
+	}
+	.company-website {
+		display: none;
+	}
 }
