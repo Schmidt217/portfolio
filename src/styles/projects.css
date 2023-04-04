@@ -6,6 +6,7 @@
 }
 .project {
 	width: 450px;
+	margin: 15px 0 15px 0;
 }
 .img-container {
 	overflow: hidden;
@@ -45,9 +46,18 @@ hr {
 
 @media (max-width: 576px) {
 	.project {
-		width: 150px;
+		width: 300px;
+	}
+	.workoutBuilderImage {
+		margin: 0;
+		height: 175px;
+		width: 300px;
+	}
+	.brewFinderImage {
+		margin: 0;
+		height: 200px;
 	}
 	hr {
-		margin: 0;
+		margin: 15px 0 15px 0;
 	}
 }

@@ -53,10 +53,16 @@
 	transform: translateY(0);
 }
 @media (max-width: 768px) {
+	.pages h4 {
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 576px) {
 	.pages {
-		width: 200px;
+		width: 300px;
+	}
+	.pages h4 {
+		font-size: 1rem;
 	}
 }
