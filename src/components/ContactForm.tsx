@@ -11,6 +11,7 @@ function ContactForm() {
 	const [emailError, setEmailError] = useState<string>("");
 	const [subjectError, setSubjectError] = useState<string>("");
 	const [messageError, setMessageError] = useState<string>("");
+	const [submitBtnText, setSubmitBtnText] = useState<string>("Submit");
 
 	const validate = () => {
 		let nameError = "";
@@ -49,6 +50,7 @@ function ContactForm() {
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		setSubmitBtnText("Sending...");
 		const isValid = validate();
 		if (isValid) {
 			// create a URLParamObject
@@ -69,10 +71,18 @@ function ContactForm() {
 			})
 				.then((response) => {
 					if (response.ok) {
-						console.log(response);
+						setName("");
+						setEmail("");
+						setSubject("");
+						setMessage("");
+						setNameError("");
+						setEmailError("");
+						setSubjectError("");
+						setMessageError("");
+						setSubmitBtnText("Submit");
 						return toast.success("Message successfully sent!");
 					} else {
-						console.error("Form Submission Error:", response);
+						setSubmitBtnText("Submit");
 						return toast.error(
 							"There was an error submitting your form! Please try again later."
 						);
@@ -81,15 +91,6 @@ function ContactForm() {
 				.catch((error) => {
 					console.error("Form Submission Error:", error);
 				});
-
-			setName("");
-			setEmail("");
-			setSubject("");
-			setMessage("");
-			setNameError("");
-			setEmailError("");
-			setSubjectError("");
-			setMessageError("");
 		}
 	};
 
@@ -137,7 +138,7 @@ function ContactForm() {
 					<div className="error">{messageError}</div>
 				</div>
 				<button className="submit-button" type="submit">
-					Submit
+					{submitBtnText}
 				</button>
 			</form>
 		</section>
