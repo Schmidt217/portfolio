@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from "react";
+import { toast } from "react-toastify";
 import "../styles/contactForm.css";
 
 function ContactForm() {
@@ -69,14 +70,18 @@ function ContactForm() {
 				.then((response) => {
 					if (response.ok) {
 						console.log(response);
+						return toast.success("Message successfully sent!");
 					} else {
 						console.error("Form Submission Error:", response);
+						return toast.error(
+							"There was an error submitting your form! Please try again later."
+						);
 					}
 				})
 				.catch((error) => {
 					console.error("Form Submission Error:", error);
 				});
-			console.log(name, email, subject, message);
+
 			setName("");
 			setEmail("");
 			setSubject("");
