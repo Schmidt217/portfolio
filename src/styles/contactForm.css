@@ -35,6 +35,7 @@ textarea {
 
 .submit-button {
 	background-color: #6a1380;
+	font-family: inherit;
 	color: #fff;
 	padding: 15px;
 	border: none;

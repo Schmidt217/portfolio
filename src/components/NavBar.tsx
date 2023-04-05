@@ -34,7 +34,6 @@ function NavBar() {
 		};
 
 		window.addEventListener("scroll", handleScroll);
-		console.log(window.innerWidth > 768);
 
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
