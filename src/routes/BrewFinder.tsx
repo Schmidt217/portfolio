@@ -23,6 +23,13 @@ function BrewFinder() {
 		<div id="brew-finder-page">
 			<h1>Brew Finder</h1>
 			<h3>Brew Finder is an iOS app developed in SwiftUI</h3>
+			<p className="source-code">
+				<a href="https://github.com/Schmidt217/Brew-Finder">
+					<i className="fab fa-github-square"></i>
+				</a>{" "}
+				To view the source code, please visit my{" "}
+				<a href="https://github.com/Schmidt217/Brew-Finder">Github page</a>
+			</p>
 			<div className="container">
 				<div
 					className="img-des-container"

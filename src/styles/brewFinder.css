@@ -12,6 +12,9 @@
 	flex-direction: column;
 	max-width: 1200px;
 }
+.source-code {
+	font-size: 18px;
+}
 @media (max-width: 576px) {
 	#brew-finder-page img {
 		height: 250px;
