@@ -1,8 +1,8 @@
 #brew-finder-page {
-	height: 100vh;
+	margin-bottom: 50px;
 }
 #brew-finder-page img {
-	height: 400px;
+	height: 500px;
 	margin: 0 15px 0 15px;
 	border-radius: 10px;
 }
@@ -14,6 +14,14 @@
 }
 .source-code {
 	font-size: 18px;
+}
+@media (max-width: 768px) {
+	#brew-finder-page img {
+		height: 350px;
+	}
+	.container {
+		width: 99vw;
+	}
 }
 @media (max-width: 576px) {
 	#brew-finder-page img {
