@@ -28,7 +28,7 @@ function Experience() {
 					</div>
 					<p>
 						Experienced in functional programing and Object Oriented
-						Programming. JavaScript, TypeScripty, Swift.
+						Programming. JavaScript, TypeScript, Swift.
 					</p>
 				</div>
 				<div className="box">
