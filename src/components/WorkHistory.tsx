@@ -1,6 +1,7 @@
 import { useState } from "react";
 import nomiso from "../assets/nomiso.jpeg";
 import bandit from "../assets/bandit.png";
+import dish from "../assets/Dish_Network.png";
 import www from "../assets/website.png";
 import "../styles/workHistory.css";
 
@@ -59,9 +60,8 @@ const WorkHistory = () => {
 			company: "Software Engineer - Dish Network",
 			date: "2022 - Present",
 			jobDescription:
-				"Developing the mobile application Dish Anywhere in React Native, Swift, Java, and Kotlin. The application is available on Android and iOS devices, as well as Android TV and Amazon's Fire TV.",
-			companyLogo:
-				"https://upload.wikimedia.org/wikipedia/en/a/a8/Original_Dish_Network_logo.svg",
+				"I work as a developer on the Dish Anywhere app where I've added features such as in-app notifications as well as created a March Madness bracket. I was also asked to help work on Sling TV, specifically on the feature Sling Rewards. I helped add that feature on the react native TV devices and on mobile devices.",
+			companyLogo: dish,
 			companyWebsite: "https://dish.com",
 		},
 		{
