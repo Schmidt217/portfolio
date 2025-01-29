@@ -65,7 +65,7 @@
 }
 
 .job-container.expanded .job-content {
-	max-height: 150px;
+	max-height: 300px;
 }
 @media (max-width: 768px) {
 	.job-container {
@@ -75,13 +75,13 @@
 
 @media (max-width: 576px) {
 	.job-header {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.job-container {
 		width: 95%;
 	}
 	.job-description {
-		margin: 15px 5px 0 0px;
+		margin: 5px 5px 0 0;
 	}
 	.company-logo-container {
 		display: none;

@@ -38,11 +38,8 @@ function MockWebsites() {
 							<p>
 								Bankist is a mock website for a fictional minimalist bank. It
 								was created through a Udemy course called "The Complete
-								JavaScript Course" by Jonas Schmedtmann. Jonas mentioned we
-								could use the projects we work on together in our Portfolios,
-								but this website was not responsive when it was finished through
-								the course. I took it upon myself to make it responsive and
-								cleaned up the way it looks.
+								JavaScript Course" by Jonas Schmedtmann. I took it upon myself
+								to make it responsive and cleaned up the way it looks.
 							</p>
 							<small>Click to go to the Bankist App!</small>
 						</div>

@@ -74,7 +74,7 @@ const WorkHistory = () => {
 		},
 		{
 			company: "Web Developer - Bandit SVC",
-			date: "2021 - Present",
+			date: "2021 - 2022",
 			jobDescription: `Collaborated the development of this website for a startup company using the React framework.`,
 			companyLogo: bandit,
 			companyWebsite: "https://banditsvc.com",

@@ -16,9 +16,6 @@ function Home() {
 					>
 						<i className="fab fa-linkedin"></i>
 					</a>
-					<a href="https://twitter.com/MobileDev217" target="_blank">
-						<i className="fab fa-twitter-square"></i>
-					</a>
 					<a href="https://github.com/Schmidt217" target="_blank">
 						<i className="fab fa-github-square"></i>
 					</a>
