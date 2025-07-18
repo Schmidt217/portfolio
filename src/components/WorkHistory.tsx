@@ -6,9 +6,9 @@ import www from "../assets/website.png";
 import "../styles/workHistory.css";
 
 interface Job {
-	company: String;
-	date: String;
-	jobDescription: String;
+	company: string;
+	date: string;
+	jobDescription: string;
 	companyLogo: string;
 	companyWebsite: string;
 }
@@ -28,11 +28,18 @@ function JobTile({
 
 	return (
 		<div className={`job-container ${expanded ? "expanded" : ""}`}>
-			<div className="job-header" onClick={toggleExpanded}>
+			<div
+				className="job-header"
+				onClick={toggleExpanded}
+				role="button"
+				tabIndex={0}
+			>
 				<h3>{company}</h3>
 				<span>
 					<span className="date">{date}</span>
-					{expanded ? "-" : "+"}
+					<span aria-label={expanded ? "Collapse" : "Expand"}>
+						{expanded ? " −" : " +"}
+					</span>
 				</span>
 			</div>
 
@@ -60,7 +67,7 @@ const WorkHistory = () => {
 			company: "Software Engineer - Dish Network",
 			date: "2022 - Present",
 			jobDescription:
-				"I work as a developer on the Dish Anywhere app where I've added features such as in-app notifications as well as created a March Madness bracket. I was also asked to help work on Sling TV, specifically on the feature Sling Rewards. I helped add that feature on the react native TV devices and on mobile devices.",
+				"Developed and maintained features for the Dish Anywhere mobile application using React Native, including in-app notifications and a March Madness bracket feature. Collaborated on Sling TV's Sling Rewards feature across TV devices and mobile platforms, enhancing user engagement and retention.",
 			companyLogo: dish,
 			companyWebsite: "https://dish.com",
 		},
@@ -68,14 +75,15 @@ const WorkHistory = () => {
 			company: "Software Engineer - Nomiso",
 			date: "2022",
 			jobDescription:
-				"Contract position with Dish Network, working on the Dish Anywhere mobile application.",
+				"Contracted through Nomiso to work on Dish Network's mobile applications, contributing to cross-platform development and feature implementation using React Native.",
 			companyLogo: nomiso,
 			companyWebsite: "https://nomiso.io",
 		},
 		{
 			company: "Web Developer - Bandit SVC",
 			date: "2021 - 2022",
-			jobDescription: `Collaborated the development of this website for a startup company using the React framework.`,
+			jobDescription:
+				"Led frontend development for a startup's web platform using React, implementing responsive design and modern JavaScript practices to create an engaging user experience.",
 			companyLogo: bandit,
 			companyWebsite: "https://banditsvc.com",
 		},

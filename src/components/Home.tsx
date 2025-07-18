@@ -6,8 +6,9 @@ function Home() {
 			<div className="home-container">
 				<h1>Mike Schmidt</h1>
 				<p>
-					Software engineer specializing in building front-end mobile and web
-					applications.
+					Full-stack software engineer specializing in mobile and web
+					applications, with expertise spanning React Native, iOS, Android,
+					C#/.NET, and modern web technologies.
 				</p>
 				<div className="social-media">
 					<a
