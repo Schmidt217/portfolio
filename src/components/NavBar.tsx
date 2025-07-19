@@ -20,7 +20,7 @@ function NavBar() {
 	const [isFixed, setIsFixed] = useState<boolean>(false);
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 	const navRef = useRef<HTMLUListElement>(null);
-	const hamburgerRef = useRef<HTMLDivElement>(null);
+	const hamburgerRef = useRef<HTMLButtonElement>(null);
 
 	// Smooth scroll with better offset calculation
 	const scrollToSection = useCallback((tabName: string) => {
