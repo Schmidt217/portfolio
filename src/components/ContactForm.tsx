@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import { CheckCircle, AlertCircle, Send, Loader2 } from "lucide-react";
 import "../styles/contactForm.css";
+import { toast } from "react-toastify";
 
 type FormFieldName = "name" | "email" | "subject" | "message";
 interface FormData {
@@ -285,6 +286,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				setSubmitStatus("success");
 				resetForm();
 				onSubmitSuccess?.(formData);
+				toast.success("Message successfully sent!");
 			} else {
 				throw new Error("Form submission failed");
 			}
