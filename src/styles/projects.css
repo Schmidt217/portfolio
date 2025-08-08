@@ -2,11 +2,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
 }
 .project {
 	width: 450px;
 	margin: 15px 0 15px 0;
+	text-decoration: none;
+}
+.project a {
+	text-decoration: none;
 }
 .img-container {
 	overflow: hidden;
@@ -15,9 +18,6 @@
 }
 .project-image {
 	transition: transform 0.5s;
-}
-.workoutBuilderImage {
-	margin: 0;
 	height: 300px;
 	width: 450px;
 }
@@ -41,12 +41,203 @@ hr {
 	height: 1px;
 	border: none;
 }
+.img-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.play-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+}
+
+.img-container:hover .play-overlay {
+	opacity: 1;
+}
+
+.play-icon {
+	font-size: 3rem;
+	color: white;
+	transition: transform 0.2s ease;
+}
+
+.play-overlay:hover .play-icon {
+	transform: scale(1.1);
+}
+
+.project-links {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.github-link,
+.demo-button,
+.live-link,
+.details-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 0.9rem;
+	transition: all 0.2s ease;
+}
+
+.github-link {
+	background: #586069;
+	color: white;
+}
+
+.github-link:hover {
+	background: #444d56;
+	transform: translateY(-2px);
+	color: white;
+}
+
+.demo-button {
+	background: #ff4757;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.demo-button:hover {
+	background: #ff3742;
+	transform: translateY(-2px);
+	color: white;
+}
+
+.live-link {
+	background: #6a1380;
+	color: white;
+}
+
+.live-link:hover {
+	background: #7a1890;
+	transform: translateY(-2px);
+	color: white;
+}
+
+.details-link {
+	background: #b87e11;
+	color: white;
+}
+
+.details-link:hover {
+	background: #f5a717;
+	transform: translateY(-2px);
+	color: white;
+}
+
+/* Modal Styles */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+	position: relative;
+	width: 90%;
+	max-width: 800px;
+	height: 70%;
+	background: black;
+	border-radius: 8px;
+	overflow: hidden;
+	animation: slideIn 0.3s ease;
+}
+
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1001;
+	transition: background 0.2s ease;
+}
+
+.close-button:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.video-container {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+	.modal-content {
+		width: 95%;
+		height: 60%;
+	}
+
+	.project-links {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.github-link,
+	.demo-button,
+	.live-link,
+	.details-link {
+		justify-content: center;
+	}
+}
 
 @media (max-width: 576px) {
 	.project {
 		width: 300px;
 	}
-	.workoutBuilderImage {
+	.project-image {
 		margin: 0;
 		height: 175px;
 		width: 300px;
