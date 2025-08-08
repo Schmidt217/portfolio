@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub, FaPlay, FaTimes, FaMobile, FaRocket } from "react-icons/fa";
+import { FaPlay, FaGithub, FaRocket, FaMobile, FaTimes } from "../lib/icons";
 import workout from "../assets/WorkoutBuildr.webp";
 import brewFinder from "../assets/brewFinder.png";
 import reactivities from "../assets/reactivities.webp";
